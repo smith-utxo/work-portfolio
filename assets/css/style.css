@@ -1,0 +1,46 @@
+* {
+  Margin: 0;
+  Padding: 0;
+  Box-sizing: border-box;
+
+}
+
+:root {
+  --primary-color: black;
+  --secondary-color: yellow;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  background-image: url(/assets/images/header-background.jpg);
+  background-position: cover;
+  background-position: center;
+}
+
+header h1 {
+  margin: 30px;
+  padding: 30px;
+  Font-size: 4em; 
+  font-weight: 900;
+  text-shadow: 5px 10px 15px rgb(105, 97, 97);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul {
+  margin: 30px;
+  padding: 40px;
+}
+
+header nav ul a {
+  padding: 20px;
+  font-size: 36px;
+  text-shadow: 5px 10px 15px rgb(105, 97, 97);
+}
+
+header nav ul a:hover {
+  color: red; 
+
+}
