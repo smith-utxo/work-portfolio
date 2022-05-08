@@ -2,15 +2,14 @@
   Margin: 0;
   Padding: 0;
   Box-sizing: border-box;
-  text-decoration: none; 
+  text-decoration: none;
 
 }
 
 :root {
   --primary-color: black;
   --secondary-color: yellow;
-  --footer-color: #f0f7f8
-  --font-standard: 48px; 
+  --footer-color: #f0f7f8 --font-standard: 48px;
 }
 
 header {
@@ -27,7 +26,7 @@ header h1 {
   padding: 30px;
   Font-size: 4em;
   font-weight: 900;
-  color: rgb(78, 53, 148); 
+  color: rgb(78, 53, 148);
   text-shadow: 5px 10px 15px rgb(105, 97, 97);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -45,7 +44,7 @@ header nav ul a {
 
 header nav ul a:hover {
   color: rgb(169, 62, 62);
-  text-shadow:10px 20px 30px rgb(30, 29, 29);
+  text-shadow: 10px 20px 30px rgb(30, 29, 29);
   border-radius: 15px;
 
 }
@@ -54,19 +53,20 @@ header nav ul a:hover {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  
-  }
 
 }
+
+
 
 .hero-img {
 
   border-right: 2px solid rgb(105, 97, 97);
   margin: 20px;
   padding: 20px;
-  
+
 
 }
+
 .hero-img:hover {
   transform: scale(1.1);
   transition: .2s;
@@ -76,21 +76,25 @@ header nav ul a:hover {
   margin: 20px 0 0 0;
   padding: 10px;
   text-align: left;
-  font-size: 30px; 
+  font-size: 30px;
 
 
 }
 
 #about-me {
-  margin-left: 5%; 
+  margin-left: 5%;
   font-size: 36px;
   text-shadow: 5px 10px 15px rgb(105, 97, 97);
-  
+
 }
+
+
+
 
 .container {
   position: relative;
 }
+
 .text-block {
   position: absolute;
   top: 1%;
@@ -98,9 +102,9 @@ header nav ul a:hover {
   background-color: black;
   color: white;
   padding: 15px;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-size: 36px;
-  
+
 }
 
 .portfolio-img-lg {
@@ -130,8 +134,8 @@ header nav ul a:hover {
 }
 
 #Work {
-  display: inline; 
-  position: absolute; 
+  display: inline;
+  position: absolute;
   margin: 7%;
   margin-top: 25%;
   font-size: 36px;
@@ -170,12 +174,46 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header nav ul{
-    display: flex; 
-    flex-direction: column; 
-    margin: auto; 
-    border: 2px solid red; 
+  #about-me {
+    margin-left: 40%;
+    color: red;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
   }
- 
-}
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px 40px 40px;
+
+  }
+  .hero-img {
+    border-right: none; 
+  }
+
+  .portfolio img {
+    width: 200px;
+  }
+
+  .text-block {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    border-radius: 1px;
+    font-size: 22px;
+  }
+
+  .nav-list {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
