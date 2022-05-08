@@ -75,6 +75,7 @@ header nav ul a:hover {
   margin: 20px 0 0 0;
   padding: 10px;
   text-align: left;
+  font-size: 30px; 
 
 
 }
@@ -128,9 +129,13 @@ header nav ul a:hover {
 }
 
 #Work {
-  margin: 50px;
+  display: inline; 
+  position: absolute; 
+  margin: 7%;
+  margin-top: 25%;
   font-size: 36px;
   text-shadow: 5px 10px 15px rgb(105, 97, 97);
+
 }
 
 .portfolio-img div:hover {
@@ -161,4 +166,12 @@ footer {
   margin: 10px;
   padding: 10px 10px 10px 10px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul a {
+    font-size: 44px
+    
+  }
+ 
 }
