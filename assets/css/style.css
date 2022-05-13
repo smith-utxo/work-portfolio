@@ -7,39 +7,40 @@
 }
 
 :root {
-  --primary-color: black;
-  --secondary-color: yellow;
-  --footer-color: #f0f7f8 --font-standard: 48px;
+  --primary-color: #5860ff;
+  --secondary-color: #ffd258;
+  --backup-color: #ff7f58;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: sticky;
-  background-image: url(/assets/images/header_image.jpg);
+  margin-top: 0;
+  background: var(--primary-color);
   background-size: 100%;
+  border: 2px solid var(--primary-color);
 }
 
-header h1 {
-  margin: 30px;
+#name {
+  font-size: 44px;
+  font-weight: bolder;
   padding: 30px;
-  Font-size: 4em;
-  font-weight: 900;
-  color: rgb(78, 53, 148);
-  text-shadow: 5px 10px 15px rgb(105, 97, 97);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 100px;
+  font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
 }
+
+
 
 header nav ul {
-  margin: 30px;
+  margin: 40px 30px 0px 10px;
   padding: 40px;
 }
 
 header nav ul a {
   padding: 20px;
   font-size: 36px;
-  text-shadow: 5px 10px 15px rgb(105, 97, 97);
+  text-shadow: 5px 10px 15px rgb(42, 38, 38);
+  color: var(--secondary-color);
+
 }
 
 header nav ul a:hover {
@@ -60,7 +61,6 @@ header nav ul a:hover {
 
 .hero-img {
 
-  border-right: 2px solid rgb(105, 97, 97);
   margin: 20px;
   padding: 20px;
 
@@ -82,13 +82,12 @@ header nav ul a:hover {
 }
 
 #about-me {
+  margin-top: 2%;
   margin-left: 5%;
   font-size: 36px;
   text-shadow: 5px 10px 15px rgb(105, 97, 97);
 
 }
-
-
 
 
 .container {
@@ -110,7 +109,7 @@ header nav ul a:hover {
 .portfolio-img-lg {
   display: flex;
   justify-content: space-between;
-  margin-left: 30%;
+  margin: 5% 0% 0% 30%;
 }
 
 .portfolio-img-lg:hover {
@@ -139,7 +138,7 @@ header nav ul a:hover {
   margin: 7%;
   margin-top: 25%;
   font-size: 36px;
-  text-shadow: 5px 10px 15px rgb(105, 97, 97);
+  text-shadow: 5px 10px 15px rgb(50, 46, 46);
 
 }
 
@@ -150,7 +149,7 @@ header nav ul a:hover {
 }
 
 footer {
-  background-color: var(--footer-color);
+  background-color: var(--backup-color);
 }
 
 #Contact-Me {
@@ -163,7 +162,7 @@ footer {
 .nav-list {
   display: flex;
   justify-content: space-around;
-  text-shadow: 5px 10px 15px rgb(105, 97, 97);
+  text-shadow: 5px 10px 15px rgb(38, 35, 35);
 
 }
 
@@ -173,17 +172,24 @@ footer {
   font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1160px) {
   #about-me {
     margin-left: 40%;
-    color: red;
+
   }
 
   header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    border: red 2px solid; 
+
+  }
+
+  header h1 {
+    display: block;
+    margin: 0px auto 0px auto;
+
   }
 
   .hero {
@@ -193,8 +199,9 @@ footer {
     margin: 0px 40px 40px 40px;
 
   }
+
   .hero-img {
-    border-right: none; 
+    border-right: none;
   }
 
   .portfolio img {
@@ -213,7 +220,25 @@ footer {
   }
 
   .nav-list {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid red; 
+  }
+
+  .test a {
+    font-size: 30px;
+  }
+
+  #name {
+    margin: auto; 
+  }
+
+}
