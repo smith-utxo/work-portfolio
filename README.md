@@ -4,7 +4,7 @@
 ## Purpose
 A Professional Portfolio highlighting my work
 
-![](assets/images/
+![](assets/images/screenshot.PNG)
 
 ## Deployed URL 
 https://smith-utxo.github.io/work-portfolio/
